@@ -10,9 +10,8 @@ var canvas = d3.select("#posts").append("div")
 								.attr("class","submissionForum")
 								.style("position", "relative")
 								.style("margin-left", "30%");
-								
 //here, we load the csv with all forum submissions
-d3.csv("testForumSubmissions.csv", function(error, data){
+d3.csv("C:/Users/Katie/Documents/GitHub/SeniorDesign/javascript/testForumSubmissions.csv", function(error, data){
 	submissions=data;
 	console.log(data);
 	createSubmissionBlocks(submissions); //call createSubmissionBlocks function

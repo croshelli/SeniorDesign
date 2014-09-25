@@ -3,6 +3,64 @@
 	padding:0;
 }
 
-#story{
+#outerContainer{
+	overflow-x: scroll;
+	width:1000%;
+	height:100%;
+	overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#outerContainer #innerContainer{
+	width:4,410px;
+}
+
+#outerContainer #innerContainer #panels{
+	/*width:743px;*/
+	height:585px;
+	float:left;
+	margin: 0 4px 0 0;
+
+}
+
+.home{
 	background-image: url(../images/Picture1.jpg);
+	width:743px;
+	height:585px;
+}
+
+.story{
+	background-image: url(../images/Picture2.jpg);
+	width:743px;
+	height:585px;
+}
+
+.app{
+	background-image: url(../images/Picture4.jpg);
+	width:743px;
+	height:585px;
+}
+
+.research{
+	background-image: url(../images/Picture5.jpg);
+	width:743px;
+	height:585px;
+}
+
+.forum{
+	background-image: url(../images/Picture6.jpg);
+	width:743px;
+	height:585px;
+}
+
+.contact{
+	background-image: url(../images/Picture7.jpg);
+	width:743px;
+	height:585px;
+}
+
+.download{
+	background-image: url(../images/Picture9.png);
+	width:743px;
+	height:585px;
 }

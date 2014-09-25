@@ -3,27 +3,31 @@
 <html>
 <head>
 	<script src="d3.v3.min.js"></script>
-	<link href="css/style.css" href="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript' charset='utf-8'></script>
     <script src = 'javascript/script.js' type="text/javascript"></script>
-    <!--<script src = 'javascript/ideasForumScript.js' type='text/javascript'></script> -->
 </head>
 <body>
-	<div id="panels">
-		<div class="story" style="width: 200px; height: 10px; color:red;" >
+	<div id="outerContainer">
+			<div id="innerContainer">
+				<div class = "home" id="panels">
+				</div>
+				<div class="story" id="panels" >
 
-		</div>
-		<div id= "app">
-		</div>
-		<div id= "research">
-		</div>
-		<div id= "forum">
-			<div id= "posts">
-			</div>
-		</div>
-		<div id="contact">
-		</div>
-		<div id="download">
+				</div>
+				<div class= "app" id="panels">
+				</div>
+				<div class= "research" id="panels">
+				</div>
+				<div class= "forum" id="panels">
+					<div id= "posts">
+					</div>
+					<script src= 'ideasForumScript.js' type="text/javascript"></script>
+				</div>
+				<div class="contact" id="panels">
+				</div>
+				<div class="download" id="panels">
+				</div>
 		</div>
 	</div>
 
