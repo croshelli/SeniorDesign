@@ -64,3 +64,15 @@
 	width:743px;
 	height:585px;
 }
+
+#posts{
+	margin-top: 70px;
+	margin-left:400px;
+	width: 310px;
+	height: 280px;
+	overflow-y:scroll;
+}
+
+#submissionBlocks{
+	float:left;
+}
