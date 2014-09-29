@@ -5,7 +5,7 @@
 
 #outerContainer{
 	overflow-x: scroll;
-	width:500%;
+	width:439%;
 	height:100%;
 	overflow-y: hidden;
     white-space: nowrap;
@@ -71,6 +71,13 @@
 	width: 310px;
 	height: 280px;
 	overflow-y:scroll;
+}
+
+#submissions{
+	margin-top: 90px;
+	margin-left:400px;
+
+
 }
 
 #submissionBlocks{
