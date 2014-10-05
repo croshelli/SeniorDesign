@@ -3,6 +3,5 @@ $(document).ready(function(){
 	$("html, body").mousewheel(function(event, delta) {
 		this.scrollLeft -= (delta * 20);
 		event.preventDefault();
-		console.log("scrolling");
 	});   
 });
