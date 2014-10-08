@@ -33,41 +33,41 @@ img{
 }
 .home{
 	background-image: url(../images/Picture1.jpg);
-<<<<<<< HEAD
-	width:743px;
-	height:100%;
-=======
-	
->>>>>>> FETCH_HEAD
+	background-size: cover;
+
 }
 
 .story{
 	background-image: url(../images/Picture2.jpg);
+	background-size: cover;
 }
 
 .app{
 	background-image: url(../images/Picture4.jpg);
+	background-size: cover;
 }
 
 .research{
 	background-image: url(../images/Picture5.jpg);
+	background-size: cover;
 	height:100%;
 }
 
 .forum{
 	background-image: url(../images/Picture6.jpg);
-	height:100%;
+	background-size: cover;
 }
 
 .contact{
 	background-image: url(../images/Picture7.jpg);
-	height:100%;
+	background-size: cover;
+
 }
 
 .download{
 	background-image: url(../images/Picture9.png);
-	width:248px;
-	height:100%;
+	background-size: cover;
+	width:445px;
 }
 
 #posts{
