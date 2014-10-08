@@ -5,64 +5,69 @@
 
 #outerContainer{
 	overflow-x: scroll;
-	width:439%;
+	width:700%;
 	height:100%;
+	max-height:100%;
 	overflow-y: hidden;
     white-space: nowrap;
 }
 
 #outerContainer #innerContainer{
-	width:4,410px;
+	height: 100%;
 }
 
 #outerContainer #innerContainer #panels{
 	/*width:743px;*/
-	height:585px;
+	height:100%;
 	float:left;
 	margin: 0 4px 0 0;
 
 }
 
+img{
+	min-height:100%;
+	min-width: 700px;
+	height:auto;
+	width:100%;
+
+}
 .home{
 	background-image: url(../images/Picture1.jpg);
+<<<<<<< HEAD
 	width:743px;
 	height:100%;
+=======
+	
+>>>>>>> FETCH_HEAD
 }
 
 .story{
 	background-image: url(../images/Picture2.jpg);
-	width:743px;
-	height:585px;
 }
 
 .app{
 	background-image: url(../images/Picture4.jpg);
-	width:743px;
-	height:585px;
 }
 
 .research{
 	background-image: url(../images/Picture5.jpg);
-	width:743px;
-	height:585px;
+	height:100%;
 }
 
 .forum{
 	background-image: url(../images/Picture6.jpg);
-	width:743px;
-	height:585px;
+	height:100%;
 }
 
 .contact{
 	background-image: url(../images/Picture7.jpg);
-	width:743px;
-	height:585px;
+	height:100%;
 }
 
 .download{
 	background-image: url(../images/Picture9.png);
 	width:248px;
-	height:585px;
+	height:100%;
 }
 
 #posts{
@@ -77,9 +82,10 @@
 	margin-top: 90px;
 	margin-left:400px;
 
-
 }
-
+.graphs{
+	margin-left:40px;
+}
 #submissionBlocks{
 	float:left;
 }
