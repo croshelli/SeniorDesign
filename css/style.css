@@ -32,37 +32,37 @@ img{
 
 }
 .home{
-	background-image: url(../images/Picture1.jpg);
+	/*background-image: url(../images/Picture1.jpg);*/
 	
 }
 
 .story{
-	background-image: url(../images/Picture2.jpg);
+	/*background-image: url(../images/Picture2.jpg);*/
 }
 
 .app{
-	background-image: url(../images/Picture4.jpg);
+	/*background-image: url(../images/Picture4.jpg);*/
 }
 
 .research{
-	background-image: url(../images/Picture5.jpg);
-	height:100%;
+	/*background-image: url(../images/Picture5.jpg);
+	height:100%;*/
 }
 
 .forum{
-	background-image: url(../images/Picture6.jpg);
-	height:100%;
+	/*background-image: url(../images/Picture6.jpg);
+	height:100%;*/
 }
 
 .contact{
-	background-image: url(../images/Picture7.jpg);
-	height:100%;
+	/*background-image: url(../images/Picture7.jpg);
+	height:100%;*/
 }
 
 .download{
-	background-image: url(../images/Picture9.png);
+	/*background-image: url(../images/Picture9.png);
 	width:248px;
-	height:100%;
+	height:100%;*/
 }
 
 #posts{

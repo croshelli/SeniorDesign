@@ -9,7 +9,9 @@ var submissions;
 
 var homeSVG = d3.select(".home").append("svg")
 								.attr("height", height)
-								.attr("width", width);
+								.attr("width", width)
+								.append("image")
+								.attr("xlink:href", "images/road.png");
 var storySVG = d3.select(".story").append("svg")
 								.attr("height", height)
 								.attr("width", width);
@@ -76,7 +78,7 @@ function createSubmissionBlocks(data){
 
 ////////////////////Script for Graphs-------------------///////////////////////////
 
-var digitalMedium;
+var digitalMedium, printMedium, oralMedium;
 var width2 = 300;
 var height2 = 300;
 var chartX = 30;
@@ -96,9 +98,7 @@ var researchGraphs = researchSVG.append("svg")
 
 
 //barchart for results of Physical Interactions
-	var yScale2 = d3.scale.linear()
-				.domain([ 0, 140])
-				.range([chartY,0 ]);
+	
 				
 	var xScale2 = d3.scale.ordinal()
 				.domain(["Talking_Singing","Fingers","Wrist","Hand_Elbow","Legs","Head","Body","FacialExpressions","Socializing","Interactions_through_external_objects"])
@@ -110,10 +110,7 @@ var researchGraphs = researchSVG.append("svg")
 				.orient("bottom")
 				.tickSize(3);
 
-	var yaxis2 = d3.svg.axis()
-					.ticks(5)
-					.scale(yScale2)
-					.orient("left");
+	
 
 start();
 function start(){
@@ -125,16 +122,38 @@ function start(){
               
             digitalMedium = data;
             generateGraph(digitalMedium);
-
+        }
+    });
+    d3.csv("otherFiles/PrintMedium.csv", function(error, data) {
+        if (error) {
+            console.log(error);
+        }
+        else{
+              
+            printMedium = data;
+           // generateGraph(printMedium);
         }
 
-	});}
+	});
+
+}
 
 	function generateGraph(data){
 	
+	var yScale2 = d3.scale.linear()
+				.range([chartY,0 ])
+				.domain([0,d3.max(data, function(d) {
+					console.log(d["interactions"]);
+					var m=d3.max(data, function(d){return d["interactions"];});
+					console.log(m);
+						return d["interactions"];})]);
 
+	var yaxis2 = d3.svg.axis()
+					.ticks(5)
+					.scale(yScale2)
+					.orient("left");
 	//moves the bar graph up or down
-   var graphShift = 25;		
+  	var graphShift = 25;		
 
    				//bars in graph	
 				var bars = researchGraphs.selectAll("rect")
