@@ -1,8 +1,8 @@
 
 //create variables for height, width, margin
 var margin = {top:20, right:20, bottom:20, left:20};
-var width = $(window).width();
 var height = $(window).height();
+var width = height*(760/585);
 var submissions;
 
 
